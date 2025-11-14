@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>HTML + CSS</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="pie.css" />
+  </head>
+
+  <body>
+    <nav class="top-header">
+      <a href="#">
+        <img src="Logo.jpg" height="32px" width="32px" alt="Logo" />
+      </a>
+
+      <ul class="horizontal-menu">
+        <li><a href="#personas">Personas</a></li>
+
+        <li><a href="#empresa">Empresas</a></li>
+
+        <li>
+          <a href="#">Productos</a>
+
+          <ul class="vertical-menu">
+            <li><a href="#">Tarjetas</a></li>
+
+            <li><a href="#">Cuentas</a></li>
+
+            <li><a href="#">Prestamos</a></li>
+
+            <li><a href="#">Seguros</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Abre tu Cuenta</a></li>
+
+        <li><a href="#contacto">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--Seccion Personas-->
+    <section id="personas" class="seccion-personas">
+      <div class="div-gral-persona">
+        <div class="div-pers-text">
+          <h2>Seccion Personas</h2>
+          <p>quien es el coronel leoncio prado gutierrez????</p>
+          <p>
+            The foot (pl.: feet) is an anatomical structure found in many
+            vertebrates. <br />
+            It is the terminal portion of a limb which bears weight and allows
+            locomotion. <br />
+            In many animals with feet, <br />
+            the foot is an organ at the terminal part of the leg made up of one
+            or more segments or bones,<br />
+            generally including claws and/or nails.<br
+          </p>
+        </div>
+
+        <div class="div-pers-img"><img src="./Logo.jpg" alt="logo acme" /></div>
+      </div>
+    </section>
+    <!--Seccion Empresa-->
+    <section id="empresa" class="seccion-empresa">
+      <div class="div-gral-empresa">
+        <div class="div-emp-text">
+          <h2>Seccion Empresas</h2>
+          <p>quien es el coronel leoncio prado gutierrez????</p>
+          <p>
+            A hand is a prehensile, multi-fingered appendage located at the end
+            of the forearm or forelimb of primates such as humans, chimpanzees,
+            monkeys, and lemurs.
+            <br />A few other vertebrates such as the koala (which has two
+            opposable thumbs on each "hand" and fingerprints extremely similar
+            to human fingerprints) are often described as having "hands" instead
+            of paws on their front limbs. <br />The raccoon is usually described
+            as having "hands" though opposable thumbs are lacking.[1]
+          </p>
+        </div>
+
+        <div class="div-emp-vid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1EevEHh58B0?si=iybI_lGWzl42OZSu"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION FORMULARIO-->
+    <section id="contacto" class="seccion-contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes dudas o comentarios? Escríbenos y te responderemos pronto.</p>
+
+      <form class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
+
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="tuemail@ejemplo.com"
+          required
+        />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Escribe tu mensaje aquí..."
+          required
+        ></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <!--FOOTER-->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="Logo.jpg" alt="Logo de ACME" class="footer-logo" />
+            <p class="footer-name">ACME</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a
+              href="./Documentos/Politicas-de-Privacidad.pdf"
+              title="Leer política de privacidad"
+              >Política de Privacidad</a
+            >
+            <a
+              href="./Documentos/terminos_y_condiciones.pdf"
+              title="Ver términos y condiciones"
+              >Términos y Condiciones</a
+            >
+            <a
+              href="./Documentos/LeyProteccionDato.pdf"
+              title="Leer ley de protección de datos"
+              >Protección de Datos</a
+            >
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook" title="Ir a Facebook">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Instagram" title="Ir a Instagram">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="LinkedIn" title="Ir a LinkedIn">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#" aria-label="Twitter" title="Ir a Twitter">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
