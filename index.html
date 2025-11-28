@@ -1,240 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <title>ACME Corporation - Productos de Calidad Dudosa desde 1949</title>
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/pie.css" />
-  </head>
-
-  <body>
-    <nav class="top-header">
-      <a href="#">
-        <img src="Logo.jpg" alt="Logo ACME" class="header-logo" />
-      </a>
-
-      <!-- Botón hamburguesa (visible en móvil) -->
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <ul class="horizontal-menu">
-        <li><a href="#personas">Para Coyotes</a></li>
-
-        <li><a href="#empresa">Para Empresas</a></li>
-
-        <li><a href="pages/catalogo.html">Catálogo Completo</a></li>
-
-        <li><a href="#contacto">Contáctanos</a></li>
-      </ul>
-    </nav>
-    <!--Seccion Personas-->
-    <section id="personas" class="seccion-personas">
-      <div class="div-gral-persona">
-        <div class="div-pers-text">
-          <h2>ACME para Coyotes Individuales</h2>
-          <p>¿Eres un depredador solitario con sueños de capturar correcaminos veloces?</p>
-          <p>
-            En ACME Corporation entendemos tus necesidades. Desde 1949, hemos sido
-            el proveedor líder de artilugios, dispositivos y aparatos para cazadores
-            decididos como tú. <br /><br />
-            Nuestro catálogo incluye miles de productos que probablemente funcionarán
-            (sin garantía escrita). Cohetes propulsados, yunques de precisión,
-            dinamita de alta potencia, catapultas gigantes, y mucho más. <br /><br />
-            <strong>Nota importante:</strong> ACME no se hace responsable por
-            explosiones, caídas desde acantilados, aplastamientos, o cualquier
-            otro incidente relacionado con el mal uso de nuestros productos.
-            Los resultados pueden variar.
-          </p>
-        </div>
-
-        <div class="div-pers-img"><img src="./Logo.jpg" alt="Logo ACME Corporation" /></div>
-      </div>
-    </section>
-    <!--Seccion Empresa-->
-    <section id="empresa" class="seccion-empresa">
-      <div class="div-gral-empresa">
-        <div class="div-emp-text">
-          <h2>ACME para Empresas</h2>
-          <p>Soluciones corporativas de dudosa eficacia desde el siglo pasado</p>
-          <p>
-            ¿Tu empresa necesita equipamiento especializado para operaciones complejas?
-            ACME Corporation ofrece soluciones B2B (Bird-to-Bird) para organizaciones
-            que buscan resultados espectaculares. <br /><br />
-
-            <strong>Nuestros servicios incluyen:</strong><br />
-            • Consultoría en estrategias de persecución<br />
-            • Alquiler de equipos de demolición<br />
-            • Capacitación en el uso de explosivos (¡corre rápido después de encender la mecha!)<br />
-            • Planes de financiamiento para compras masivas de TNT<br /><br />
-
-            Confían en nosotros organizaciones como la Asociación de Coyotes del Desierto,
-            el Sindicato de Depredadores Fallidos, y muchos más. El 99% de nuestros clientes
-            siguen vivos (más o menos).
-          </p>
-        </div>
-
-        <div class="div-emp-vid">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/1EevEHh58B0?si=iybI_lGWzl42OZSu"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
-    <!--SECCION FORMULARIO-->
-    <section id="contacto" class="seccion-contacto">
-      <h2>Contáctanos</h2>
-      <p>¿Tienes dudas sobre nuestros productos? ¿Necesitas reclamar por un cohete defectuoso? Escríbenos.</p>
-      <p>Nuestro equipo de atención al cliente (sobrevivientes experimentados) está disponible para ayudarte.</p>
-
-      <form class="contact-form">
-        <h3>Envíanos un mensaje</h3>
-
-        <label for="nombre">Nombre completo (o alias) *</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          placeholder="Ej: Wile E. Coyote"
-          required
-        />
-
-        <label for="correo">Correo electrónico *</label>
-        <input
-          type="email"
-          id="correo"
-          name="correo"
-          placeholder="tucorreo@desierto.com"
-          required
-        />
-
-        <label for="telefono">Teléfono (opcional)</label>
-        <input
-          type="tel"
-          id="telefono"
-          name="telefono"
-          placeholder="+1 (555) 123-4567"
-        />
-
-        <label for="asunto">Asunto *</label>
-        <select id="asunto" name="asunto" required>
-          <option value="">Selecciona un asunto</option>
-          <option value="consulta">Consulta general</option>
-          <option value="compra">Información de compra</option>
-          <option value="reclamo">Reclamo de producto</option>
-          <option value="garantia">Solicitud de garantía (¿qué garantía?)</option>
-          <option value="tecnico">Soporte técnico</option>
-          <option value="distribuidor">Quiero ser distribuidor</option>
-        </select>
-
-        <label for="mensaje">Mensaje *</label>
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          rows="6"
-          placeholder="Describe tu consulta o problema aquí... (Ej: El cohete explotó antes de tiempo, el yunque cayó sobre mí, la catapulta me lanzó al Gran Cañón...)"
-          required
-        ></textarea>
-
-        <label class="checkbox-label">
-          <input type="checkbox" name="terminos" required />
-          Acepto los términos y condiciones (y libero a ACME de toda responsabilidad por lesiones, explosiones o persecuciones fallidas)
-        </label>
-
-        <button type="submit" class="btn-enviar">Enviar mensaje</button>
-
-        <p class="form-note">
-          <strong>Nota:</strong> El tiempo de respuesta puede variar dependiendo de si nuestras oficinas han sido bombardeadas recientemente.
-          En caso de emergencia, ¡corre rápido!
-        </p>
-      </form>
-    </section>
-
-    <!--FOOTER-->
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img src="Logo.jpg" alt="Logo de ACME" class="footer-logo" />
-            <p class="footer-name">ACME Corporation</p>
-            <small>© 1949-2025 Todos los derechos reservados (pero sin garantías)</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a
-              href="./Documentos/Politicas-de-Privacidad.pdf"
-              title="Leer política de privacidad"
-              >Política de Privacidad</a
-            >
-            <a
-              href="./Documentos/terminos_y_condiciones.pdf"
-              title="Ver términos y condiciones"
-              >Términos y Condiciones</a
-            >
-            <a
-              href="./Documentos/LeyProteccionDato.pdf"
-              title="Leer ley de protección de datos"
-              >Exención de Responsabilidad</a
-            >
-          </div>
-
-          <!-- Redes sociales -->
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/p/ACME-CIA-SAC-100063624730621/?locale=es_LA" aria-label="Facebook" title="Ir a Facebook">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                  alt="Facebook"
-                  class="social-icon"
-                />
-              </a>
-              <a href="https://www.instagram.com/creadoresacme/?hl=es" aria-label="Instagram" title="Ir a Instagram">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                  alt="Instagram"
-                  class="social-icon"
-                />
-              </a>
-              <a href="https://pe.linkedin.com/company/acmeagenciacreativa" aria-label="LinkedIn" title="Ir a LinkedIn">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                  alt="LinkedIn"
-                  class="social-icon"
-                />
-              </a>
-              <a href="https://x.com/ACMEGroup_India" aria-label="Twitter" title="Ir a Twitter">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                  alt="Twitter"
-                  class="social-icon"
-                />
-              </a>
+    <section class="login-container">
+        
+        <div class="login-box">
+            <div class="login-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/3143/3143615.png" alt="Icono ACME" class="login-icon" width="50" height="50">
+                <h2>Acceso ACME</h2>
             </div>
-          </div>
+
+            <form onsubmit="return validarLogin(event);">
+
+                <div class="input-group">
+                    <label for="email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/542/542638.png" alt="Email" width="20" height="20">
+                        Email
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Contraseña" width="20" height="20">
+                        Clave de Acceso (ok)
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Introduce la clave secreta" required>
+                </div>
+                
+                <button type="submit" class="login-button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995505.png" alt="Login" width="20" height="20">
+                    Iniciar Sesión
+                </button>
+            </form>
+
+            <!-- Separador -->
+            <div class="divider">
+                <span>O accede con</span>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="social-login">
+                <a href="pages/landingpage.html" class="social-btn google-btn" title="Acceder con Google">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google" width="24" height="24">
+                </a>
+                <a href="pages/landingpage.html" class="social-btn facebook-btn" title="Acceder con Facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="pages/landingpage.html" class="social-btn github-btn" title="Acceder con GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="24" height="24">
+                </a>
+            </div>
+
         </div>
-      </footer>
     </section>
 
-    <!-- antes de cerrar body: enlazar script de comportamiento del menú -->
-    <script src="js/script.js"></script>
-  </body>
+    <script src="js/login.js"></script>
+
+</body>
 </html>
